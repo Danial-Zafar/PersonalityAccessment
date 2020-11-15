@@ -1,0 +1,721 @@
+<div class="stepdiv">
+    <h1
+        style="padding-left: 10px; text-align: justify; color: beige; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+    Total 70 Questions</h1>
+</div> <br><br>
+
+<div class="feedbackdiv">
+    <form novalidate (ngSubmit)="onSubmit(mbtitest)" [formGroup]="mbtitest">
+    <table class="table table-bordered">
+        <tr>
+            <th style=" color: beige;">
+              Q1.  At a party do you:
+            </th>
+            <th style=" color: beige;"> 
+              
+                <input type="radio" formControlName="qone"           name="qone"          value="a"               required>a. Interact with many, including strangers
+                <br>
+                <input type="radio" formControlName="qone"           name="qone"          value="b"               required>b. Interact with a few, known to you 
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+               Q2. Are you more:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qtwo"           name="qtwo"          value="a"               required>Realistic than speculative
+                <br>
+                <input type="radio" formControlName="qtwo"           name="qtwo"          value="b"               required>Speculative than realistic
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+               Q3. Is it worse to:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qthree"         name="qthree"          value="a"               required>Have your “head in the clouds”
+                <br>
+                <input type="radio" formControlName="qthree"         name="qthree"          value="b"               required>Be “in a rut”
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+               Q4. Are you more impressed by:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfour"          name="qfour"          value="a"               required>Principles
+                <br>
+                <input type="radio" formControlName="qfour"          name="qfour"          value="b"               required>Emotions
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+               Q5. Are more drawn toward the:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfive"          name="qfive"          value="a"               required>Convincing
+                <br>
+                <input type="radio" formControlName="qfive"          name="qfive"          value="b"               required>Touching
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+               Q6. Do you prefer to work:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qsix"           name="qsix"          value="a"               required>To deadlines
+                <br>
+                <input type="radio" formControlName="qsix"           name="qsix"          value="b"               required>Just “whenever”
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+               Q7. Do you tend to choose:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qseven"         name="qseven"          value="a"               required>Rather carefully
+                <br>
+                <input type="radio" formControlName="qseven"         name="qseven"          value="b"               required>Somewhat impulsively
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+               Q8. At parties do you:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qeight"         name="qeight"          value="a"               required>Stay late, with increasing energy
+                <br>
+                <input type="radio" formControlName="qeight"         name="qeight"          value="b"               required>Leave early with decreased energy
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+               Q9. Are you more attracted to:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qnine"          name="qnine"          value="a"               required>Sensible people
+                <br>
+                <input type="radio" formControlName="qnine"          name="qnine"          value="b"               required>Imaginative people
+            </th>
+        </tr>
+       
+        <tr>
+            <th style=" color: beige;">
+               Q10. Are you more interested in:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qten"           name="qten"          value="a"               required>What is actual
+                <br>
+                <input type="radio" formControlName="qten"           name="qten"          value="b"               required>What is possible
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+               Q11. In judging others are you more swayed by:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qeleven"        name="qeleven"          value="a"               required>Laws than circumstances
+                <br>
+                <input type="radio" formControlName="qeleven"        name="qeleven"          value="b"               required>Circumstances than laws
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+               Q12. In approaching others is your inclination to be somewhat:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qtwelve"        name="qtwelve"          value="a"               required>Objective
+                <br>
+                <input type="radio" formControlName="qtwelve"        name="qtwelve"          value="b"               required>Personal
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+               Q13. Are you more:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qthireen"       name="qthireen"          value="a"               required>Punctual
+                <br>
+                <input type="radio" formControlName="qthireen"       name="qthireen"          value="b"               required>Leisurely
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q14. Does it bother you more having things::
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfourteen"      name="qfourteen"          value="a"               required>Incomplete
+                <br>
+                <input type="radio" formControlName="qfourteen"      name="qfourteen"          value="b"               required>Complete
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q15. In your social groups do you:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfiteen"        name="qfiteen"          value="a"               required>Keep abreast of other’s happenings
+                <br>
+                <input type="radio" formControlName="qfiteen"        name="qfiteen"          value="b"               required>Get behind on the news
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q16. In doing ordinary things are you more likely to:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qsixteen"       name="qsixteen"          value="a"               required>Do it the usual way
+                <br>
+                <input type="radio" formControlName="qsixteen"       name="qsixteen"          value="b"               required>Do it your own way
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q17.  Writers should:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qseventeen"     name="qseventeen"          value="a"               required> “Say what they mean and mean what they say”
+                <br>
+                <input type="radio" formControlName="qseventeen"     name="qseventeen"          value="b"               required>Express things more by use of analogy
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q18. Which appeals to you more:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qeighteen"      name="qeighteen"          value="a"               required>Consistency of thought
+                <br>
+                <input type="radio" formControlName="qeighteen"      name="qeighteen"          value="b"               required>Harmonious human relationships
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q19. Are you more comfortable in making:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qnineteen"      name="qnineteen"          value="a"               required>Logical judgments
+                <br>
+                <input type="radio" formControlName="qnineteen"      name="qnineteen"          value="b"               required>Value judgments
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q20. Do you want things:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qtwenty"        name="qtwenty"          value="a"               required>Settled and decided
+                <br>
+                <input type="radio" formControlName="qtwenty"        name="qtwenty"          value="b"               required>Unsettled and undecided
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q21. Would you say you are more:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qtwentyone"     name="qtwentyone"          value="a"               required>Serious and determined
+                <br>
+                <input type="radio" formControlName="qtwentyone"     name="qtwentyone"          value="b"               required>Easy-going
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q22. In phoning do you:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qtwentytwo"     name="qtwentytwo"          value="a"               required>Rarely question that it will all be said
+                <br>
+                <input type="radio" formControlName="qtwentytwo"     name="qtwentytwo"          value="b"               required>Rehearse what you’ll say
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q23. Facts: 
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qtwentythree"   name="qtwentythree"           value="a"               required>“Speak for themselves”
+                <br>
+                <input type="radio" formControlName="qtwentythree"   name="qtwentythree"           value="b"               required>Illustrate principles
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q24. Are visionaries:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qtwentyfour"    name="qtwentyfour"          value="a"               required>somewhat annoying
+                <br>
+                <input type="radio" formControlName="qtwentyfour"    name="qtwentyfour"          value="b"               required>rather fascinating
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q25. Are you more often:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qtwentyfive"    name="qtwentyfive"          value="a"               required>a cool-headed person
+                <br>
+                <input type="radio" formControlName="qtwentyfive"    name="qtwentyfive"          value="b"               required>a warm-hearted person
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q26. Is it worse to be:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qtwentysix"     name="qtwentysix"          value="a"               required>unjust
+                <br>
+                <input type="radio" formControlName="qtwentysix"     name="qtwentysix"          value="b"               required>merciless
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q27. Should one usually let events occur:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qtwentyseven"   name="qtwentyseven"           value="a"               required>by careful selection and choice
+                <br>
+                <input type="radio" formControlName="qtwentyseven"   name="qtwentyseven"           value="b"               required>randomly and by chance
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q28. Do you feel better about:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qtwentyeight"   name="qtwentyeight"           value="a"               required>having purchased
+                <br>
+                <input type="radio" formControlName="qtwentyeight"   name="qtwentyeight"           value="b"               required>having the option to buy
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q29. In company do you:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qtwentynine"    name="qtwentynine"          value="a"               required>initiate conversation
+                <br>
+                <input type="radio" formControlName="qtwentynine"    name="qtwentynine"          value="b"               required>wait to be approached
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q30. Common sense is:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qthirty"        name="qthirty"          value="a"               required>rarely questionable
+                <br>
+                <input type="radio" formControlName="qthirty"        name="qthirty"          value="b"              required>frequently questionable
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q31. Children often do not:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qthirtyone"     name="qthirtyone"          value="a"               required>make themselves useful enough
+                <br>
+                <input type="radio" formControlName="qthirtyone"     name="qthirtyone"          value="b"               required>exercise their fantasy enough
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q32. In making decisions do you feel more comfortable with:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qthirtytwo"     name="qthirtytwo"          value="a"               required>standards
+                <br>
+                <input type="radio" formControlName="qthirtytwo"     name="qthirtytwo"          value="b"               required>feelings
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q33. Are you more:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qthirtythree"   name="qthirtythree"           value="a"               required>firm than gentle
+                <br>
+                <input type="radio" formControlName="qthirtythree"   name="qthirtythree"           value="b"               required>gentle than firm
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q34. Which is more admirable:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qthirtyfour"    name="qthirtyfour"          value="a"               required>the ability to organize and be methodical
+                <br>
+                <input type="radio" formControlName="qthirtyfour"    name="qthirtyfour"          value="b"               required>the ability to adapt and make do
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q35. Do you put more value on:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qthirtyfive"    name="qthirtyfive"          value="a"               required>infinite
+                <br>
+                <input type="radio" formControlName="qthirtyfive"    name="qthirtyfive"          value="b"               required>open-minded
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q36. Does new and non-routine interaction with others:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qthirtysix"     name="qthirtysix"          value="a"               required>stimulate and enerthirtysixize you
+                <br>
+                <input type="radio" formControlName="qthirtysix"     name="qthirtysix"          value="b"               required>tax your reserves
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q37. Are you more frequently:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qthirtyseven"   name="qthirtyseven"           value="a"               required>a practical sort of person
+                <br>
+                <input type="radio" formControlName="qthirtyseven"   name="qthirtyseven"           value="b"               required>a fanciful sort of person
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q38. Are you more likely to:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qthirtyeight"   name="qthirtyeight"           value="a"               required>see how others are useful
+                <br>
+                <input type="radio" formControlName="qthirtyeight"   name="qthirtyeight"           value="b"               required>see how others see
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q39. Which is more satisfying:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qthirtynine"    name="qthirtynine"          value="a"               required>to discuss an issue thoroughly
+                <br>
+                <input type="radio" formControlName="qthirtynine"    name="qthirtynine"          value="b"               required>to arrive at agreement on an issue
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q40. Which rules you more:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfourty"        name="qfourty"          value="a"               required>your head
+                <br>
+                <input type="radio" formControlName="qfourty"        name="qfourty"          value="b"               required>your heart
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q41. Are you more comfortable with work that is:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfourtyone"     name="qfourtyone"          value="a"               required>contracted
+                <br>
+                <input type="radio" formControlName="qfourtyone"     name="qfourtyone"          value="b"               required>done on a casual basis
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q42. Do you tend to look for:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfourtytwo"     name="qfourtytwo"          value="a"               required>the orderly
+                <br>
+                <input type="radio" formControlName="qfourtytwo"     name="qfourtytwo"          value="b"               required>whatever turns up
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q43. Do you prefer:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfourtythree"   name="qfourtythree"           value="a"               required>many friends with brief contact
+                <br>
+                <input type="radio" formControlName="qfourtythree"   name="qfourtythree"           value="b"               required>a few friends with more lengthy contact
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q44. Do you go more by:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfourtyfour"    name="qfourtyfour"          value="a"               required>facts
+                <br>
+                <input type="radio" formControlName="qfourtyfour"    name="qfourtyfour"          value="b"               required>principles
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q45. Are you more interested in:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfourtyfive"    name="qfourtyfive"          value="a"               required>production and distribution
+                <br>
+                <input type="radio" formControlName="qfourtyfive"    name="qfourtyfive"          value="b"               required>design and research
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q46. Which is more of a compliment:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfourtysix"     name="qfourtysix"          value="a"               required>“There is a very logical person.”
+                <br>
+                <input type="radio" formControlName="qfourtysix"     name="qfourtysix"          value="b"               required>“There is a very sentimental person.”
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q47. Do you value in yourself more that you are:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfourtyseven"   name="qfourtyseven"           value="a"               required>unwavering
+                <br>
+                <input type="radio" formControlName="qfourtyseven"   name="qfourtyseven"           value="b"               required>devoted
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q48. Do you more often prefer the
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfourtyeight"   name="qfourtyeight"           value="a"               required>final and unalterable statement
+                <br>
+                <input type="radio" formControlName="qfourtyeight"   name="qfourtyeight"           value="b"               required>tentative and preliminary statement
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                49. Are you more comfortable:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfourtynine"    name="qfourtynine"          value="a"               required>after a decision
+                <br>
+                <input type="radio" formControlName="qfourtynine"    name="qfourtynine"          value="b"               required>before a decision
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q50. Do you:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfifty"         name="qfifty"          value="a"               required>Incospeak easily and at length with strangersmplete
+                <br>
+                <input type="radio" formControlName="qfifty"         name="qfifty"          value="b"               required>find little to say to strangers
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q51. Are you more likely to trust your:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfiftyone"      name="qfiftyone"          value="a"               required>experience
+                <br>
+                <input type="radio" formControlName="qfiftyone"      name="qfiftyone"          value="b"               required>hunch
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q52. Do you feel:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfiftytwo"      name="qfiftytwo"          value="a"               required>more practical than ingenious
+                <br>
+                <input type="radio" formControlName="qfiftytwo"      name="qfiftytwo"          value="b"               required>more ingenious than practical
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q53. Which person is more to be complimented – one of:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfiftythree"    name="qfiftythree"          value="a"               required>clear reason
+                <br>
+                <input type="radio" formControlName="qfiftythree"    name="qfiftythree"          value="b"               required>strong feeling
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q54. Are you inclined more to be:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfiftyfour"     name="qfiftyfour"          value="a"               required>fair-minded
+                <br>
+                <input type="radio" formControlName="qfiftyfour"     name="qfiftyfour"          value="b"               required>sympathetic
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q55. Is it preferable mostly to:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfiftyfive"     name="qfiftyfive"          value="a"               required>make sure things are arranged
+                <br>
+                <input type="radio" formControlName="qfiftyfive"     name="qfiftyfive"          value="b"               required>just let things happen
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q56. In relationships should most things be:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfiftysix"      name="qfiftysix"          value="a"               required>re-negotiable
+                <br>
+                <input type="radio" formControlName="qfiftysix"      name="qfiftysix"          value="b"               required>random and circumstantial
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q57. When the phone rings do you:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfiftyseven"    name="qfiftyseven"          value="a"               required>hasten to get to it first
+                <br>
+                <input type="radio" formControlName="qfiftyseven"    name="qfiftyseven"          value="b"               required>hope someone else will answer
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q58. Do you prize more in yourself:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfiftyeight"    name="qfiftyeight"          value="a"               required>a strong sense of reality
+                <br>
+                <input type="radio" formControlName="qfiftyeight"    name="qfiftyeight"          value="b"               required>a vivid imagination
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q59. Are you drawn more to:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qfiftynine"     name="qfiftynine"          value="a"               required>fundamentals
+                <br>
+                <input type="radio" formControlName="qfiftynine"     name="qfiftynine"          value="b"               required>overtones
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q60. Which seems the greater error:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qsixty"         name="qsixty"          value="a"               required>to be too passionate
+                <br>
+                <input type="radio" formControlName="qsixty"         name="qsixty"          value="b"               required>to be too objective
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q61. Do you see yourself as basically:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qsixtyone"      name="qsixtyone"          value="a"               required>hard-headed
+                <br>
+                <input type="radio" formControlName="qsixtyone"      name="qsixtyone"          value="b"               required>soft-hearted
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q62. Which situation appeals to you more:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qsixtytwo"      name="qsixtytwo"          value="a"               required>the structured and scheduled
+                <br>
+                <input type="radio" formControlName="qsixtytwo"      name="qsixtytwo"          value="b"               required>the unstructured and unscheduled
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q63. Are you a person that is more:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qsixtythree"    name="qsixtythree"          value="a"               required>routinized than whimsical
+                <br>
+                <input type="radio" formControlName="qsixtythree"    name="qsixtythree"          value="b"               required>whimsical than routinized
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q64. Are you more inclined to be:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qsixtyfour"     name="qsixtyfour"          value="a"               required>easy to approach
+                <br>
+                <input type="radio" formControlName="qsixtyfour"     name="qsixtyfour"          value="b"               required>somewhat reserved
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q65. In writings do you prefer:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qsixtyfive"     name="qsixtyfive"          value="a"               required>the more literal
+                <br>
+                <input type="radio" formControlName="qsixtyfive"     name="qsixtyfive"          value="b"               required>the more figurative
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q66. Is it harder for you to:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qsixtysix"      name="qsixtysix"          value="a"               required>identify with others
+                <br>
+                <input type="radio" formControlName="qsixtysix"      name="qsixtysix"          value="b"               required>to be too objective
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q67. Which do you wish more for yourself:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qsixtyseven"    name="qsixtyseven"          value="a"               required>clarity of reason
+                <br>
+                <input type="radio" formControlName="qsixtyseven"    name="qsixtyseven"          value="b"               required>strength of compassion
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q68. Which is the greater fault:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qsixtyeight"    name="qsixtyeight"          value="a"               required>being indiscriminate
+                <br>
+                <input type="radio" formControlName="qsixtyeight"    name="qsixtyeight"          value="b"               required>being critical
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q69. Do you prefer the:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qsixtynine"     name="qsixtynine"          value="a"               required>planned event
+                <br>
+                <input type="radio" formControlName="qsixtynine"     name="qsixtynine"          value="b"               required>unplanned event
+            </th>
+        </tr>
+        <tr>
+            <th style=" color: beige;">
+                Q70. Do you tend to be more:
+            </th>
+            <th style=" color: beige;">
+                <input type="radio" formControlName="qseventy"       name="qseventy"          value="a"               required>deliberate than spontaneous
+                <br>
+                <input type="radio" formControlName="qseventy"       name="qseventy"          value="b"               required>spontaneous than deliberate
+            </th>
+        </tr>
+
+
+    </table>
+    <br>
+    <div class="buttondiv">
+      <button class="button" type="submit" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Submit</button>
+    </div>
+</form>
+</div> 
+

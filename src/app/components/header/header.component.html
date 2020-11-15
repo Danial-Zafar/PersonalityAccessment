@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <div class="logo">
+          <img src="assets/img/Logoo.png" height="90">
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+      <ng-template [ngIf]="!isFilled">
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a routerLink='/home' class="nav-link">Home</a></li>
+            <li class="nav-item"><a  routerLink='/about' class="nav-link">About</a></li>
+            <li class="nav-item"><a routerLink='/mission-statement' class="nav-link">Mission Statement</a></li>
+            <li class="nav-item"><a routerLink='/awareness-journey' class="nav-link">Awareness Journey</a></li>
+            <li class="nav-item"><a routerLink='/portal' class="nav-link">Student Portal</a></li>
+          <li class="nav-item"><a routerLink='/contact' class="nav-link">Contact</a></li>
+          <button class="btn btn-outline-light"><a routerLink='/portal' style="color: black;">LOGIN | SIGN UP</a></button>
+
+          </ul>
+        </div>
+      </ng-template>
+    </div>
+  </nav>

@@ -1,0 +1,16 @@
+<div id="login-box">
+    <div class="left">
+      <h1>Login</h1>
+      <hr>
+      <form novalidate (ngSubmit)="onSubmit(user)" [formGroup]="user">
+      <input required type="text" formControlName="name" placeholder="Email" />
+      <input required type="password" formControlName="password"   placeholder="Password" />
+    <hr>
+     <button type="submit" class="btn btn-success">LOGIN</button><hr>
+      <a href="#sign_up"><button class="btn btn-danger">Sign Me Up</button></a>
+    </form>
+    </div>
+    <div class="right">
+      <img src="assets/img/walk.jpg" height="100%">
+    </div>
+  </div>

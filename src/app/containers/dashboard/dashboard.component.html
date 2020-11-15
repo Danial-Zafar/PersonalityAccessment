@@ -1,0 +1,88 @@
+  <div class="hero-wrap js-fullheight" >
+    <br><br><br><br>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-sm-3">
+    
+                <!-- List-Group Panel -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Contents</h1>
+                    </div>
+                    <div class="list-group">
+                        <a href="#"  [routerLink]="['/dashboard', {outlets: { dashboard: ['profile'] }}]" class="list-group-item">Student Profile</a>
+                        <a href="#" [routerLink]="['/dashboard', {outlets: { dashboard: ['ajstep'] }}]"  class="list-group-item">Awareness Journey</a>
+                        <a href="#" [routerLink]="['/dashboard', {outlets: { dashboard: ['mbti'] }}]" class="list-group-item">MBTI</a>
+                        <a href="#" [routerLink]="['/dashboard', {outlets: { dashboard: ['raisec'] }}]" class="list-group-item">RIASEC</a>
+                        <a href="#" [routerLink]="['/dashboard', {outlets: { dashboard: ['results'] }}]" class="list-group-item">Results</a>
+                        <button (click)="logOut()" class="list-group-item">Log Out</button>
+                    </div>
+                </div>
+    
+                <!-- Text Panel -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">About this page</h1>
+                    </div>
+    
+                    <div class="panel-body">
+                        <p>Designed to guide you to take you through each step along the way of your journey. We will be with you tell the end.</p>
+                    </div>
+                </div>				
+            </div><!--/Left Column-->
+            <div class="col-sm-6">
+                <router-outlet name="dashboard"></router-outlet>
+            </div>
+            <!-- Right Column -->
+          <div class="col-sm-3">
+    
+        <!-- Progress Bars -->
+        <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <span class="glyphicon glyphicon-scale"></span> 
+                        Test Results
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <label >MBTI : </label>
+                    <label >{{(results$ | async)?.mbti[0]}} ,</label>
+                    <label >{{(results$ | async)?.mbti[1]}} ,</label>
+                    <label >{{(results$ | async)?.mbti[2]}} ,</label>
+                    <label >{{(results$ | async)?.mbti[3]}} </label>
+                 
+                    <br>
+                    <label >RAISEC : </label>
+                    <label >{{(results$ | async)?.raisec[0]}} ,</label>
+                    <label >{{(results$ | async)?.raisec[1]}} ,</label>
+                    <label >{{(results$ | async)?.raisec[2]}}</label>
+                </div>
+            </div> 
+            
+    
+                <!-- Carousel --> 
+                 <h3><span class="glyphicon glyphicon-modal-window"></span> Motivate yourself</h3>
+                <div id="side-carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#side-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#side-carousel" data-slide-to="1"></li>
+                        <li data-target="#side-carousel" data-slide-to="2"></li>
+                    </ol>
+                    <carousel>
+                        <slide>
+                            <img class="img-responsive" src="assets/img/focus.PNG" alt="first slide"  height="100%">
+                        </slide>
+                        <slide>
+                            <img class="img-responsive" src="assets/img/dream.PNG" alt="first slide" height="100%">
+                        </slide>
+                        <slide>
+                            <img class="img-responsive" src="assets/img/win.PNG" alt="first slide" height="100%">
+                        </slide>
+                    </carousel>
+                 
+    
+          </div><!--/Right Column -->
+          </div><!--row-->
+        </div><!--/container-fluid-->
+  </div>

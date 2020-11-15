@@ -1,0 +1,18 @@
+<div id="login-box">
+    <div class="left">
+     <a id="sign_up"><h1>Sign up</h1></a> 
+      <form novalidate (ngSubmit)="onSignUp(signup)" [formGroup]="signup">
+      <input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="text" formControlName="email" name="email" placeholder="E-mail" />
+      <input required type="password" formControlName="password" name="password" placeholder="Password" />
+      <input required type="password" formControlName="repassword"  name="repassword" placeholder="Retype password" />
+       <button type="submit" popover="You can try login now" class="btn btn-success">Sign Me Up</button>
+    </form>
+    </div>
+    
+    <div class="right">
+      <span class="loginwith" style="color: black; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Sign in with<br />social network</span>
+      <button (click)="signInWithFacebook()" class="social-signin facebook">Log in with facebook</button>
+      <button (click)="signInWithGoogle()" class="social-signin google">Log in with Google+</button>
+    </div>
+    <div class="or">OR</div>
+  </div>

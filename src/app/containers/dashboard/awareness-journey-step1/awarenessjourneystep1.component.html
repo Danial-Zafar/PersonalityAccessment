@@ -1,0 +1,516 @@
+<ng-template [ngIf]="first">
+
+<div class="stepdiv">
+    <h1
+        style="padding-left: 10px; text-align: justify; color: beige; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        Step 1: Interests and Aptitude</h1>
+</div> <br><br>
+
+<div class="maindiv">
+    
+    <table>
+        <tr style="height: 250px;">
+            <td style="padding-left: 10px; width: 400px; text-align: justify; color: beige;"> <b>Interests</b> are
+                the feeling of wanting to know or to learn about something or someone.
+                <br><b>Example.</b> A Person might have an interest in knowing how to play a guitar.
+                <hr><b>Aptitude</b> is a natural ability to do something.
+                <br><b>Example.</b> A child might have a naturally artistic mind and can sketch/draw with using just
+                their imagination
+            </td>
+            <td style="width: 300px;"><img src="assets\img\interests.jpg "
+                    width="250px" style="padding-left: 20px;"></td>
+        </tr>
+    </table>
+
+    <br><br>
+</div> 
+<div class="feedbackdiv"  >
+    <form novalidate (ngSubmit)="onStepOne(stepone)"  [formGroup]="stepone">
+    <table>
+            <tr>
+                <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Have you thought about
+                    your interests?</td>
+                <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"> <input type="radio"
+                    formControlName="soneone"  name="soneone" value="1" required>Yes <input type="radio" value="0" name="soneone" required>No</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Share if any:</td>
+                <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"><textarea
+                    formControlName="sonetwo" name="sonetwo" id="intshare" cols="20" rows="4"></textarea> </td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Is there an ability
+                    that comes to you naturally?</td>
+                <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"> <input type="radio"
+                    formControlName="sonethree" name="sonethree" value="1" required>Yes <input type="radio" name="sonethree" value="0" required>No</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Share your ability if
+                    any:</td>
+                <td style="padding-left: 10px; padding-right: 10px; width: 100px; text-align: justify; color: beige;">
+                    <textarea formControlName="sonefour" name="sonefour" id="abshare" cols="20" rows="4"></textarea> </td>
+            </tr>
+        </table>
+        <br>
+        <div class="buttondiv">
+           <button class="button" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">NEXT</button>
+        </div>
+    </form>
+</div> 
+
+
+
+</ng-template>
+
+
+<ng-template [ngIf]="second">
+        <div class="stepdiv">
+                <h1
+                    style="padding-left: 10px; text-align: justify; color: beige; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    Step 2: Value and preferences</h1>
+            </div> <br><br>
+        
+            <div class="maindiv">
+                <table>
+                    <tr style="height: 250px;">
+                        <td style="padding-left: 10px; width: 400px; text-align: justify; color: beige;"> <b>Values</b> are the
+                            principles or standards of behavior; one's judgement of what is important in life.
+                            <br><b>Example.</b> A cricket fan will always give cricket more value than football.
+                            <hr><b>Preference</b> is a greater liking for one alternative over another or others.
+                            <br><b>Example.</b> A student might prefer math over science.
+                        </td>
+                        <td style="width: 300px;"><img src="assets\img\values.png " width="250px"
+                                style="padding-left: 20px;"></td>
+                    </tr>
+                </table>
+                <br><br>
+            </div> 
+            <div class="feedbackdiv">
+                <form novalidate (ngSubmit)="onStepTwo(steptwo)" [formGroup]="steptwo">
+                    <table>
+                        <tr> <br><br>
+                            <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Mention any two
+                                subjects you value most:</td>
+                            <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"><textarea
+                                formControlName="stwoone" name="stwoone" id="intshare" cols="20" rows="4"></textarea> </td>
+                        </tr>
+                        <tr><br>
+                            <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Mention your career
+                                preference (eg. Doctor, footballer) :</td>
+                            <td style="padding-left: 10px; padding-right: 10px; width: 100px; text-align: justify; color: beige;">
+                                <textarea formControlName="stwotwo" name="stwotwo" id="abshare" cols="20" rows="4"></textarea> </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div class="buttondiv">
+                        <button class="button" type="submit"
+                        style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">NEXT</button>
+                    </div>
+                 </form>
+            </div> 
+        
+           
+
+
+</ng-template>
+
+<ng-template [ngIf]="third">
+        <div class="stepdiv">
+                <h1
+                    style="padding-left: 10px; text-align: justify; color: beige; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    Step 3: Academic Background</h1>
+            </div> <br><br>
+        
+            <div class="maindiv" >
+                <table>
+                    <tr style="height: 250px;">
+                        <td style="padding-left: 10px; padding-right: 10px; width: 370px; text-align: justify; color: beige;">Your academic background is the previous formal training you have received in one or more areas of knowledge. <hr>So, typically that would be your degrees. Your matric and college subjects to be precise. But, these can also include diplomas, foundations and additional courses.
+                            Academic background helps you filter to what career line you want to pursue.   
+                        </td>
+                        <td style="width: 300px;"><img src="assets\img\academic.png "
+                                width="250px" style="padding-left: 20px;"></td>
+                    </tr>
+                </table>
+                <br><br>
+            </div> 
+            <div class="feedbackdiv" >
+                <form novalidate (ngSubmit)="onStepThree(stepthree)" [formGroup]="stepthree">
+                <table>
+                    <tr>
+                        <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Have you done national or international board? </td>
+                        <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"> 
+                            <input type="radio" formControlName="boardType" name="boardType" value="National" required>National <br> 
+                            <input type="radio" formControlName="boardType" name="boardType" value="Interantional"  required>international</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Please mention the board:</td>
+                        <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"><textarea
+                            formControlName="boardName" name="boardName" id="intshare" cols="20" rows="4"></textarea> </td>
+                    </tr>
+                </table>
+                <br>
+                    <div class="buttondiv">
+                        <button class="button" type="submit" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">NEXT</button>
+                    </div>
+                </form>
+            </div>
+        
+            
+</ng-template>
+
+
+<ng-template [ngIf]="fourth">
+        <div class="stepdiv">
+                <h1
+                    style="padding-left: 10px; text-align: justify; color: beige; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    Step 4: Physical Limitations</h1>
+            </div> <br><br>
+        
+            <div class="maindiv" >
+                <table>
+                    <tr style="height: 250px;">
+                        <td style="padding-left: 10px; padding-right: 10px; width: 700px; text-align: justify; color: beige;"> A
+                            physical disability
+                            is a physical condition that affects a person’s mobility, physical capacity, stamina, or dexterity.
+                            This can include brain or spinal cord injuries, multiple sclerosis, cerebral palsy, respiratory
+                            disorders, epilepsy, hearing and visual impairments and more.
+                            <hr> The causes of a physical disability are also varied. They usually fall into one of two
+                            categories:
+                            <br> • Hereditary/Congenital – where a person has been born with a physical disability or developed
+                            one due to inherited genetic problems, has suffered an injury at birth, or has issues with their
+                            muscles.
+                            <br> • Acquired – An acquired physical disability could be due to an accident, infection or disease,
+                            or as a side effect of a medical condition.
+                            <hr>This disability factor reduces or limits career paths. Example. A person with a disabled leg can
+                            never be a driver or a footballer.
+        
+                        </td>
+                    </tr>
+                </table>
+                <br><br><br><br>
+            </div> 
+            <div class="feedbackdiv" >
+                <form novalidate (ngSubmit)="onStepFour(stepfour)" [formGroup]="stepfour">
+                    <table>
+                        <tr>
+                            <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Do you have any physical limitations? </td>
+                            <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"> 
+                                <input type="radio" formControlName="limitation"   name="limitation" value="1" required>Yes 
+                                <input type="radio" formControlName="limitation"   name="limitation" value="0" required>No</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">If any, please mention:</td>
+                            <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;">
+                                <textarea formControlName="disability" name="disability" id="intshare" cols="20" rows="4"></textarea> </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div class="buttondiv">
+                        <button class="button" type="submit" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">NEXT</button> 
+                    </div>
+                </form>
+            </div> 
+        
+           
+</ng-template>
+
+<ng-template [ngIf]="fifth" >
+        <div class="stepdiv">
+                <h1
+                    style="padding-left: 10px; text-align: justify; color: beige; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    Step 5: Financial Constraints</h1>
+            </div> <br><br>
+        
+            <div class="maindiv">
+                <table>
+                    <tr style="height: 250px;">
+                        <td style="padding-left: 10px; width: 420px; text-align: justify; color: beige;">Financial constraints are the limitations to how much a person can spend. These constraints have to be taken into consideration so that we can differentiate between opportunities. Some opportunities might demand a more financially strong background than the other. <br>Example. Studies abroad require a more financially strong background as the fee structure is higher for international students.
+                        </td>
+                        <td style="width: 300px;"><img src="assets\img\finance.jpg "
+                                width="230px" style="padding-left: 20px;"></td>
+                    </tr>
+                </table>
+                <br><br>
+            </div> 
+            <div class="feedbackdiv">
+                <form novalidate (ngSubmit)="onStepFive(stepfive)" [formGroup]="stepfive" >
+                    <table>
+                        <tr>
+                            <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">What is your family income?</td>
+                            <td style="padding-left: 10px; padding-right: 10px; width: 100px; text-align: justify; color: beige;"><input formControlName="income" type="number"> </td>
+                            
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;"><br> Do you have any other means of financial assistance? </td>
+                            <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"> 
+                                <input type="radio" formControlName="financialassistance" value="1" name="financialassistance" required>Yes 
+                                <input type="radio" formControlName="financialassistance" value="0" name="financialassistance" required>No</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Mention if any:</td>
+                            <td style="padding-left: 10px; padding-right: 10px; width: 100px; text-align: justify; color: beige;">
+                                <br><textarea formControlName="financialassistanceType" name="financialassistanceType" id="abshare" cols="20" rows="3"></textarea> </td>
+                        
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;"><br> Do you require financial support?</td>
+                            <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"> <br>
+                                <input type="radio" formControlName="support" value="1" name="support" value="1" required>Yes 
+                                <input type="radio" formControlName="support" value="0" name="support" value="0" required>No
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div class="buttondiv">
+                    <button class="button" type="submit" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">NEXT</button>
+                    </div>
+                </form>
+            </div> 
+        
+         
+</ng-template>
+
+<ng-template [ngIf]="sixth">
+    <div class="stepdiv">
+            <h1
+                style="padding-left: 10px; text-align: justify; color: beige; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                Step 6: Social Constraints</h1>
+        </div> <br><br>
+    
+        <div class="maindiv" >
+            <table>
+                <tr style="height: 250px;">
+                    <td style="padding-left: 10px; padding-right: 10px; width: 700px; text-align: justify; color: beige;"> A
+                        All of our career choices take place within the context of society.
+                        Several career theories, such as Social Cognitive Career Theory and Social Learning, address this context in addition to other factors. 
+                        Events that take place in our lives may affect the choices available to us and even dictate our choices to a certain degree. 
+                    </td>
+                </tr>
+            </table>
+            <br><br><br><br>
+        </div> 
+        <div class="feedbackdiv" >
+            
+             <form novalidate (ngSubmit)="onStepSix(stepsix)" [formGroup]="stepsix" >
+                <table>
+                    <tr>
+                        <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Are you a social person?  </td>
+                        <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"> 
+                            <input type="radio" formControlName="ssixone" value="1" name="ssixone" required>Yes
+                            <input type="radio" formControlName="ssixone" value="0" name="ssixone" required>No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Do you think social Constraint can affect your career decision? </td>
+                        <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"> 
+                            <input type="radio" formControlName="ssixtwo" value="1" name="ssixtwo" required>Yes 
+                            <input type="radio" formControlName="ssixtwo" value="0" name="ssixtwo" required>No
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Do you have any life incidents that changed your career decision? if yes please :</td>
+                    
+                        <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"> 
+                            <input type="radio" formControlName="ssixthree" value="1" name="ssixthree" required>Yes 
+                            <input type="radio" formControlName="ssixthree" value="0" name="ssixthree" required>No
+                        </td>  
+                            <br>
+                        <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;">
+                            <textarea  formControlName="ssixfour" id="intshare" cols="20" rows="4"></textarea> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Will your social values affect your career choice? </td>
+                        <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"> 
+                            <input type="radio" formControlName="ssixfive" name="ssixfive" value="1"  required>Yes
+                            <input type="radio" formControlName="ssixfive" name="ssixfive" value="0"  required>No
+                        </td>
+                    </tr>
+                </table>
+                    <div class="buttondiv">
+                        <button class="button" type="submit" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">NEXT</button>  
+                    </div>
+                    <br>
+            </form>
+        </div> 
+</ng-template>
+
+<ng-template [ngIf]="seventh">
+    <div class="stepdiv">
+            <h1
+                style="padding-left: 10px; text-align: justify; color: beige; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                Step 7: Job Market</h1>
+        </div> <br><br>
+    
+        <div class="maindiv" >
+            <table>
+                <tr style="height: 250px;">
+                    <td style="padding-left: 10px; padding-right: 10px; width: 700px; text-align: justify; color: beige;"> A
+                        Job market also affects the career choice because you have to earn through market so 
+                        if the job market is good and Increasing then there are more chances for you to continue 
+                        with your career and similarly If job market is not good then there will be less chances.   </td>
+                </tr>
+            </table>
+            <br><br><br><br>
+        </div> 
+        <div class="feedbackdiv" >
+           <form novalidate (ngSubmit)="onStepSeven(stepseven)" [formGroup]="stepseven">
+                    <table>
+                        <tr>
+                            <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Do you have any previous knowledge of the job market that you intend to aim for? </td>
+                            <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"> 
+                                <input type="radio" formControlName="ssevenone" name="ssevenone" value="1" required>Yes 
+                                <input type="radio" formControlName="ssevenone" name="ssevenone" value="0" required>No
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Will you proceed with your career If the job market is not good?  </td>
+                            <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"> 
+                                <input type="radio" formControlName="sseventwo" name="sseventwo" value="1" required>Yes 
+                                <input type="radio"  formControlName="sseventwo" name="sseventwo" value="0" required>No
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">3-	Have any of your family members faced job market’s issues? </td>
+                        
+                            <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"> 
+                                <input type="radio" formControlName="sseventhree" name="sseventhree" value="1" required>Yes 
+                                <input type="radio"  formControlName="sseventhree" name="sseventhree" value="0" required>No
+                            </td>  
+                        
+                        </tr>
+                        <br>
+                    </table>
+
+                    <div class="buttondiv">
+                    <button class="button" type="submit" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">NEXT</button>
+                </div>
+            </form>
+        </div> 
+    
+      
+</ng-template>
+
+<ng-template [ngIf]="eight">
+    <div class="stepdiv">
+            <h1
+                style="padding-left: 10px; text-align: justify; color: beige; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                Step 8: Career choices of peers & family members</h1>
+        </div> <br><br>
+    
+        <div class="maindiv" >
+            <table>
+                <tr style="height: 250px;">
+                    <td style="padding-left: 10px; padding-right: 10px; width: 700px; text-align: justify; color: beige;"> A
+                        The views and suggestions of your family and peers are very important everywhere but in Pakistan it’s 
+                        the most influencing external factor because here we have to choose the career what our parents or family suggest. 
+                        So, due to this factor a lot of students have to pursue a career of their parent’s choice rather than their own choice and skills.</td>
+                </tr>
+            </table>
+            <br><br><br><br>
+        </div> 
+        <div class="feedbackdiv" >
+            <form novalidate (ngSubmit)="onStepEight(stepeight)" [formGroup]="stepeight">
+                <table>
+                    <tr>
+                        <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Has anyone from your family suggested you a career, if yes please mention? </td>
+                    
+                        <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"> 
+                            <input type="radio" formControlName="seightone" value="1" name="seightone" required>Yes 
+                            <input type="radio" formControlName="seightone" value="0" name="seightone" required>No
+                        </td> 
+                         <br>
+                        <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;">
+                            <textarea formControlName="seighttwo" id="intshare" cols="20" rows="4"></textarea> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">2-	Do you allow your family to make decisions related to your career?  </td>
+                        <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"> 
+                            <input type="radio" formControlName="seightthree" value="1" name="seightthree" required>Yes 
+                            <input type="radio" formControlName="seightthree" value="0" name="seightthree" required>No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">3- Do you have a Joint Family System?  </td>
+                        <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"> 
+                            <input type="radio" formControlName="seightfour" value="1" name="seightfour" required>Yes 
+                            <input type="radio" formControlName="seightfour" value="0" name="seightfour" required>No
+                        </td>
+                    </tr>
+                </table>
+                <br>
+        
+                <div class="buttondiv">
+                        <button class="button" type="submit" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">NEXT</button>  
+                </div>
+            </form>
+        </div> 
+</ng-template>
+
+
+<ng-template [ngIf]="nine">
+    <div class="stepdiv">
+            <h1
+                style="padding-left: 10px; text-align: justify; color: beige; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                Step 9: Technology & Media</h1>
+        </div> <br><br>
+    
+        <div class="maindiv" >
+            <table>
+                <tr style="height: 250px;">
+                    <td style="padding-left: 10px; padding-right: 10px; width: 700px; text-align: justify; color: beige;"> A
+                        We are in 21st century and things are not same as they were a few years ago. 
+                        The world has invented modern technologies and everyone has to cope up to survive. 
+                        The Media is also an important factor in this century while choosing your career. 
+                        Both technology and Media are external factors that can affect your career choice.          
+                    </tr>
+            </table>
+            <br><br><br><br>
+        </div> 
+        <div class="feedbackdiv" >
+            <form novalidate (ngSubmit)="onStepNine(stepnine)" [formGroup]="stepnine">
+                <table>
+                    <tr>
+                        <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Do you own a Facebook account?  </td>
+                    
+                        <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"> 
+                            <input type="radio" formControlName="snineone" value="1" name="snineone" required>Yes 
+                            <input type="radio" formControlName="snineone" value="0" name="snineone" required>No
+                        </td>  
+                            <br>
+                        
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Do you think career opportunities progresses with technology? </td>
+                        <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"> 
+                            <input type="radio" formControlName="sninetwo" value="1" name="sninetwo" required>Yes 
+                            <input type="radio" formControlName="sninetwo" value="0" name="sninetwo" required>No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Do you think media influences you to choose a certain career?  </td>
+                        <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"> 
+                            <input type="radio" formControlName="sninethree" value="1" name="sninethree" required>Yes 
+                            <input type="radio" formControlName="sninethree" value="0" name="sninethree" required>No
+                        </td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td style="padding-left: 10px; width: 320px; text-align: justify; color: beige;">Has Technology made your life easy? </td>
+                        <td style="padding-left: 10px; width: 100px; text-align: justify; color: beige;"> 
+                            <input type="radio" formControlName="sninefour" value="1" name="sninefour" required>Yes 
+                            <input type="radio" formControlName="sninefour" value="0" name="sninefour" required>No
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <div class="buttondiv">
+                    <button class="button" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">SUBMIT</button> 
+                </div>
+            </form>
+        </div> 
+</ng-template>
